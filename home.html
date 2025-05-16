@@ -5,31 +5,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Company Website</title>
+  <title>Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body>
 
 <nav>
-  <div class="flex justify-between">
+  <div id="home" class="pt-5 flex justify-between bg-white w-full">
     <div class="flex ml-4">
-      <img src="images/logo.png" class="h-10 mt-4 pl-2">
-      <p class="m-4 text-2xl font-bold text-gray-800">Kenanga Tech Sdn Bhd</p>
+      <img src="images/logo.png" class="h-10 pl-2">
+      <p class="pl-3 text-2xl font-bold text-gray-800">Kenanga Tech Sdn Bhd</p>
     </div>
     <div >
-      <ul class="flex pr-4 pt-5 cursor-pointer">
-        <li><a href="#About Us" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">About Us</a></li>
-        <li><a href="#Services" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Services</a></li>
-        <li><a href="#" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Project</a></li>
+      <ul class="flex pr-4 cursor-pointer">
+        <li><a href="\home.html" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Home</a></li>
+        <li><a href="\services.html" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Services</a></li>
+        <li><a href="\project.html" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Project</a></li>
         <li><a href="#" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Contact Us</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div main-photo class="flex items-center justify-center">
-  <div class="mt-4 bg-[url(images/office.png)] w-full h-[700px] bg-cover">
+<div main-photo class="pt-4 flex items-center justify-center">
+  <div class="bg-[url(images/office.png)] w-full h-[700px] bg-cover">
     <div class="flex item-center justify-center bg-black bg-opacity-50 h-full">
       <h1 class="m-20 pt-10 text-5xl font-semibold text-white font-sans text-center">Malaysia's Leading Top<br>Development & Construction Company</h1>
     </div>
@@ -48,22 +48,23 @@
   </div>
 </div>
 
-<div id="About Us" class="flex items-center justify-center">
+<div id="About Us">
   <div class="bg-[url(images/city1.jpg)] bg-[30%_50%] w-full h-[700px] bg-cover">
-    <div class="flex flex-col item-center justify-center bg-black bg-opacity-50 h-full">
-      <h3 class="pt-10 text-5xl font-semibold text-white font-sans text-center">About Us</h3>
-      <p class="pt-10 text-xl font-semibold text-white font-sans text-center">
-        Founded in 2004, Kenanga Tech Sdn Bhd has built a legacy of exceeding expectations 
-        in the Development.<br> We've spearheaded Developed and executed a successful corporate 
-        social responsibility program that has positively impacted <br> 5 million lives in our 
-        local community, driven by innovation and client success. Our core values of 
-        Customer centricity<br> and Empowerment underpin our consistent growth. Beyond business, 
-        we're committed to change the future. Looking ahead,<br> we aim to change the future, 
-        leveraging our expertise to deliver exceptional results for our partners.
-      </p>
-      <button class="mt-20 text-2xl font-semibold text-white font-sans text-center hover:text-red-300 active:text-white">
-        Our Project
-      </button>
+    <div class="bg-black bg-opacity-50 h-full">
+      <div class="justify-center items-center">
+        <h3 class="pt-10 text-5xl font-semibold text-white font-sans text-center ">About Us</h3>
+        <p class="pt-10 text-xl font-semibold text-white font-sans text-center">
+          Founded in 2004, Kenanga Tech Sdn Bhd has built a legacy of exceeding expectations 
+          in the Development. We've spearheaded Developed and executed a successful corporate 
+          social responsibility program that has positively impacted 5 million lives in our 
+          local community, driven by innovation and client success. Our core values of 
+          Customer centricity and Empowerment underpin our consistent growth. Beyond business, 
+          we're committed to change the future. Looking ahead, we aim to change the future, 
+          leveraging our expertise to deliver exceptional results for our partners.
+        </p>
+        <button class="objects-center pt-20 text-2xl font-semibold text-white font-sans text-center hover:text-red-300 active:text-white">
+          Our Projects</button>
+      </div>
     </div>
   </div>
 </div>
