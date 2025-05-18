@@ -1,0 +1,31 @@
+<header class="bg-blue-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-xl md:text-2xl font-bold">My Website</h1>
+
+            <!-- Hamburger Button (Visible on Small Screens) -->
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Navigation (Visible on Large Screens) -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-gray-200 text-base">Home</a>
+                <a href="#" class="hover:text-gray-200 text-base">About</a>
+                <a href="#" class="hover:text-gray-200 text-base">Services</a>
+                <a href="#" class="hover:text-gray-200 text-base">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Pop-Out Menu (Hidden by Default, Toggles on Small Screens) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-700">
+            <nav class="flex flex-col space-y-2 px-4 py-4">
+                <a href="#" class="hover:text-gray-200 text-base py-2">Home</a>
+                <a href="#" class="hover:text-gray-200 text-base py-2">About</a>
+                <a href="#" class="hover:text-gray-200 text-base py-2">Services</a>
+                <a href="#" class="hover:text-gray-200 text-base py-2">Contact</a>
+            </nav>
+        </div>
+    </header>

@@ -11,24 +11,45 @@
 </head>
 <body>
 
-<nav>
-  <div id="home" class="pt-5 flex justify-between bg-white w-full">
-    <div class="flex ml-4">
-      <img src="images/logo.png" class="h-10 pl-2">
-      <p class="pl-3 text-2xl font-bold text-gray-800">Kenanga Tech Sdn Bhd</p>
-    </div>
-    <div >
-      <ul class="flex pr-4 cursor-pointer">
-        <li><a href="\home.html" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Home</a></li>
-        <li><a href="\services.html" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Services</a></li>
-        <li><a href="\project.html" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Project</a></li>
-        <li><a href="\contact.html" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Contact Us</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<!--header-->
+<header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <!--logo-->
+      <div class="lg:flex ml-4">
+        <img src="images/logo.png" class="hidden md:block h-10 pl-2">
+        <h1 class="pl-2 text-2xl font-bold text-gray-800">Kenanga Tech Sdn Bhd</h1>
+      </div>
+               
+        <!--hamburger button on small screen-->
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
 
-<div main-photo class="pt-4 flex items-center justify-center">
+        <!--nav visible on normal screen-->
+        <nav class="hidden md:flex">
+            <a href="\home.html"    class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Home</a>
+            <a href="\services.html"class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Services</a>
+            <a href="\project.html" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Project</a>
+            <a href="\contact.html" class="text-2xl m-4 font-bold text-gray-800 hover:text-red-600 active:text-red-300">Contact Us</a>
+        </nav>
+      </div>
+
+      <!--pop-out menu on small screen-->
+      <div id="mobile-menu" class="hidden md:hidden bg-grey-100">
+          <nav class="flex flex-col space-y-2 px-4 py-4">
+            <li><a href="\home.html"     class="font-semibold hover:text-red-600 active:text-red-300">Home</a></li>
+            <li><a href="\services.html" class="font-semibold hover:text-red-600 active:text-red-300 text-base">Services</a></li>
+            <li><a href="\project.html"  class="font-semibold hover:text-red-600 active:text-red-300 text-base">Project</a></li>
+            <li><a href="\contact.html"  class="font-semibold hover:text-red-600 active:text-red-300 text-base">Contact Us</a></li>
+          </nav>
+      </div>
+
+    </div>
+</header>
+<!--1st photo-->
+<div main-photo class="flex items-center justify-center">
   <div class="bg-[url(images/office.png)] w-full h-[700px] bg-cover">
     <div class="flex item-center justify-center bg-black bg-opacity-50 h-full">
       <h1 class="m-20 pt-10 text-5xl font-semibold text-white font-sans text-center">Malaysia's Leading Top<br>Development & Construction Company</h1>
@@ -36,24 +57,24 @@
   </div>
 </div>
 
-<div bursa class="flex w-full h-40">
-  <div class="flex pt-10 item-center justify-center align-baseline bg-red-100 w-full">
+<div bursa class="grid grid-cols-1 md:grid-cols-2">
+  <div class="flex flex-cols py-6 pt-10 item-center justify-center bg-red-100 w-full">
     <span class="m-2 font-sans text-2xl font-semibold">Share price</span>
     <span class="m-2 font-sans text-2xl">on 10 May</span>
     <span class="m-2 font-sans font-semibold text-3xl">RM 4.70</span>
   </div>
-  <div class="p-4 bg-sky-100 w-full">
-    <p class="m-2 font-sans text-2xl font-semibold">Bursa announcement on 10 May</p>
-    <p class="m-2 font-sans text-2xl">Change in shareholder- Employement Provident Fund Board</p>
+  <div class="p-4 bg-sky-100 h-full w-full">
+    <p class="m-2 font-sans text-xl font-semibold md:text-2xl">Bursa announcement on 10 May</p>
+    <p class="m-2 font-sans whitespace-normal text-xl md:text-2xl">Change in shareholder- Employement Provident Fund Board</p>
   </div>
 </div>
 
 <div id="About Us">
   <div class="bg-[url(images/city1.jpg)] bg-[30%_50%] w-full h-[700px] bg-cover">
     <div class="bg-black bg-opacity-50 h-full">
-      <div class="w-[1000px] mx-auto w-1/2">
-        <h3 class="pt-28 text-5xl font-semibold text-white font-sans text-center ">About Us</h3>
-        <p class="pt-10 text-xl font-semibold text-white font-sans text-center">
+      <div class="container mx-auto items-center justify-center w-3/4">
+        <h3 class="pt-28 md:text-5xl text-4xl font-semibold text-white font-sans text-center ">About Us</h3>
+        <p class="pt-10 px-5 text-sm md:text-xl font-semibold text-white font-sans text-center">
           Founded in 2004, Kenanga Tech Sdn Bhd has built a legacy of exceeding expectations 
           in the Development. We've spearheaded Developed and executed a successful corporate 
           social responsibility program that has positively impacted 5 million lives in our 
@@ -80,21 +101,21 @@
     </div>
   </div>
 </div>
-
-<div class="flex w-full h-40">
-  <div class="flex justify-evenly pt-10 item-center justify-center align-baseline bg-red-100 w-full">
-    <span class="mt-4 font-sans text-3xl font-semibold">Construction</span>
-    <span class="mt-4 font-sans text-3xl font-semibold">Retail & Mall</span>
-    <span class="mt-4 font-sans text-3xl font-semibold">Logistic</span>
-    <span class="mt-4 font-sans text-3xl font-semibold">Development</span>
-    <span class="mt-4 font-sans text-3xl font-semibold">Accounting</span>
+<!--service list-->
+<div class="flex w-full h-full bg-red-100">
+  <div class="container mx-auto px-4 py-8 text-center flex justify-evenly items-center grid grid-cols-1 md:grid-cols-5 md:text-xl gap-4">
+    <span class="font-sans text-3xl font-semibold">Construction</span>
+    <span class="font-sans text-3xl font-semibold">Retail & Mall</span>
+    <span class="font-sans text-3xl font-semibold">Logistic</span>
+    <span class="font-sans text-3xl font-semibold">Development</span>
+    <span class="font-sans text-3xl font-semibold">Accounting</span>
   </div>
 </div>
 
 <div 4nd-photo class="flex items-center justify-center">
   <div class="bg-[url(images/city2.jpg)] bg-[30%_50%] w-full h-[700px] bg-cover">
     <div class="flex flex-col item-center justify-center bg-black bg-opacity-50 h-full">
-      <p class="pt-10 text-5xl font-semibold text-white font-sans text-center">We Leading The Project With Passion</p>
+      <p class="pt-10 px-5 text-5xl font-semibold text-white font-sans text-center">We Leading The Project With Passion</p>
       <button class="mt-20 text-2xl font-semibold text-white font-sans text-center hover:text-red-300 active:text-white">
         Join Our Team & Grow Together
       </button>
@@ -102,24 +123,34 @@
   </div>
 </div>
 
-<div class="bg-red-100 h-[300px] flex flex-col items-center justify-center">
+<div class="bg-red-100 h-full py-10 md:py-20 flex flex-col items-center justify-center">
   <div>
-    <h2 class="font-sans font-bold text-4xl">Let's Build Something Amazing</h2>
+    <h2 class="font-sans font-bold text-3xl md:text-4xl ">Let's Build Something Amazing</h2>
   </div>
   <div class="pt-4 flex">
     <p class="font-sans text-xl pr-3">Connect with Us</p>
     <a href="/contact.html" class="font-sans text-xl text-sky-600 hover:text-red-600 active:text-red-300">here</a>
   </div>
 </div>
-
-  <div class="bg-white">
-    <div class="flex">
-      <img src="images/klogo.png" class="m-10">
-      <a href="#" class="ml-20 pt-10 pl-0 text-1xl text-gray-600 font-semibold font-sans">Main Office<br><br>Kenanga Tech Sdn Bhd<br>No 12, Kompleks Jo Garden<br>Jalan Sulaiman 3, Kampung Baru<br>56310 Kuala Lumpur</a>
-      <p class="ml-10 pt-10 pl-40 text-1xl text-gray-600 font-semibold font-sans">Link<br>About<br>Dashboard<br>Our<br>Client<br>Report<br>Contact Us</p>
-      <p class="ml-10 pt-10 pl-40 text-1xl text-gray-600 font-semibold font-sans">Our Client<br>Gamuda<br>CBRE<br>UDA Holdings<br>UOA Group<br>Bomba<br>Asset Industries</p>
+<!--bottom bar-->
+  <div class="container bg-white">
+    <div class="grid grid-cols-2 md:grid-cols-4 justify-evenly items-center mx-auto">
+      <img src="images/klogo.png" class="w-[70%] md:object-cover m-10">
+      <p class="pt-10 ml-2 text-1xl text-gray-600 font-semibold font-sans">Main Office<br><br>Kenanga Tech Sdn Bhd<br>No 12, Kompleks Jo Garden<br>Jalan Sulaiman 3, Kampung Baru<br>56310 Kuala Lumpur</p>
+      <p class="pt-10 ml-10 md:ml-0 text-gray-600 font-semibold font-sans">Link<br>About<br>Dashboard<br>Our<br>Client<br>Report<br>Contact Us</p>
+      <p class="pt-10 text-gray-600 font-semibold font-sans">Our Client<br>Gamuda<br>CBRE<br>UDA Holdings<br>UOA Group<br>Bomba<br>Asset Industries</p>
     </div>
   </div>
+
+  <!-- JavaScript for Toggling Menu -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 </html>
